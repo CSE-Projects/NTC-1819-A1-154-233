@@ -7,3 +7,5 @@ Assignment for the course Number Theory and Cryptography
 ### Usage
 
 ### Folder Structure
+* `phi.m` - Euler's Totient function
+* `modulo.m` - modulo operator

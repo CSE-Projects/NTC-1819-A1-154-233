@@ -1,11 +1,12 @@
+% calculate Euler's Totient function
 function result = phi(m)
     iterate = 2;
     current = m;
     assign = m ;
     while(iterate * iterate <= current)
-        if( mod(current,iterate) == 0 )
+        if( modulo(current,iterate) == 0 )
           assign = (assign/iterate) * (iterate-1);
-          while( mod(current,iterate) ==0 )
+          while( modulo(current,iterate) ==0 )
               current = current/iterate;
           end
         end
