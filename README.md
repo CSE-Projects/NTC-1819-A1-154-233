@@ -9,3 +9,4 @@ Assignment for the course Number Theory and Cryptography
 ### Folder Structure
 * `phi.m` - Euler's Totient function
 * `modulo.m` - modulo operator
+* `gcd.m` - greatest common divisor of two numbers using Euclid's algorithm
