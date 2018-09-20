@@ -2,7 +2,7 @@
 Assignment for the course Number Theory and Cryptography
 
 ### Q 22.  
-#### Write a MATLAB code to find the remainder when a^x+b^y is divided by m, where, a, b, x, y and m are positive integers.
+#### Write a MATLAB code to find ![equation](https://latex.codecogs.com/gif.latex?(a^{x}&plus;b^{y})&space;\bmod&space;m) where a, b, x, y and m are positive integers.
 
 ### Usage
 
