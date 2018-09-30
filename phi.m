@@ -13,7 +13,7 @@ function result = phi(m)
         iterate = iterate+1;
     end
     if( current>1 )
-        assign = (assign/current) * (current-1);qq
+        assign = (assign/current) * (current-1);
     end
     result = assign;
     
