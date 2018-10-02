@@ -3,7 +3,7 @@ Assignment for the course Number Theory and Cryptography
  - Dibyadarshan Hota (16CO154)
  - Omkar Prabhu (16CO233)
 
-### Q 22. Write a MATLAB code to find (a^b + x^y) modulo m where a, b, x, y and m are positive integers.
+### Q 22. Write a MATLAB code to find (a^x + b^y) modulo m where a, b, x, y and m are positive integers.
 
 ### Usage
 Run

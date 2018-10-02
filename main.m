@@ -10,9 +10,10 @@ m = input('m: ');
 %---------------------------------------------------------
 % Calculating (a^x + b^y) % m by fast modulo exponentiation
 
-% check if a and m are co prime
+% calculating a^x mod m
 ea = fast_modulo_exponentiation(a, x, m);
-% check if b and m are co prime
+
+% calculating b^y mod m
 eb = fast_modulo_exponentiation(b, y, m);
 
 % result = (ea + eb) % m
