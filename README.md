@@ -11,6 +11,9 @@ Run
 >> main
 ```
 
+### Output
+<img src = 'graph.png' width = 400px height = 400px>
+
 ### Folder Structure
 * `main.m` - Main logic of the program
 * `fast_modulo_exponentiation.m` - Exponentiates using repeated squaring and taking modulo
