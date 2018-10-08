@@ -2,7 +2,7 @@
 function gcd_value = gcd_int(a,b)
 % Euclid's algorithm
 % gcd(m, n) = gcd(n%m, m)
-% gcd(0, n) = 0
+% gcd(0, n) = n
     if(a == 0) 
         gcd_value = b;
     else
