@@ -9,7 +9,7 @@ m = input('m: ');
 
 %---------------------------------------------------------
 % Calculating (a^x + b^y) % m by fast modulo exponentiation
-
+start_1 = cputime;
 % calculating a^x mod m
 ea = fast_modulo_exponentiation(a, x, m);
 
@@ -18,12 +18,13 @@ eb = fast_modulo_exponentiation(b, y, m);
 
 % result = (ea + eb) % m
 res = modulo(ea + eb, m);
-fprintf('Result using fast modulo exponentiation: %d\n', res);
+end_1 = cputime - start_1;
+fprintf('Result using fast modulo exponentiation: %d\nTime: %f\n', res, end_1);
 
 %---------------------------------------------------------
 % Calculating (a^x + b^y) % m by reducing power of x and y
 % by using phi(m), and then using fast modulo exponentiation
-
+start_1 = cputime;
 % calculate phi of m
 pi=phi(m); 
 
@@ -43,6 +44,13 @@ end
 
 % result = (ea + eb) % m
 res = modulo(ea + eb, m);
-fprintf('Result using fast modulo exponentiation by reducing power: %d\n', res);
+end_1 = cputime - start_1;
+fprintf('Result using fast modulo exponentiation by reducing power: %d\nTime: %f\n', res, end_1);
 
 
+%---------------------------------------------------------
+% Brute
+start_1 = cputime;
+res = mod( mod(power(a,x),m) + mod(power(b,y),m) , m);
+end_1 = cputime - start_1;
+fprintf('Result using brute: %d\nTime: %f\n', res, end_1);
