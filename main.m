@@ -51,6 +51,16 @@ fprintf('Result using fast modulo exponentiation by reducing power: %d\nTime: %f
 %---------------------------------------------------------
 % Brute
 start_1 = cputime;
-res = mod( mod(power(a,x),m) + mod(power(b,y),m) , m);
+% res = mod( mod(power(a,x),m) + mod(power(b,y),m) , m);
+
+ans1 = 1;
+for i = 1:x
+    ans1 = mod((ans1 * a), m);
+end
+ans2 = 1;
+for i = 1:y
+    ans2 = mod((ans2 * b), m);
+end 
+res = mod((ans1 + ans2), m);
 end_1 = cputime - start_1;
 fprintf('Result using brute: %d\nTime: %f\n', res, end_1);
